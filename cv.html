@@ -13,20 +13,23 @@
 </head>
 <body>
     <div class="container" id="convertirEnPDF"> 
-        <div></div>
         <div class="elt-droite">
             <div class="personnel">
                 <h3>Aïssatou Coulibaly</h3>
                 <p>Aspirante dévéloppeur Fullstack</p>
-                <p class="portrait">
-                    <img class="photo" src="images/istockphoto-598251048-1024x1024.jpg" alt="">
-                </p>
+                <div class="portrait">
+                  <img class="photo" src="images/istockphoto-598251048-1024x1024.jpg" alt="">
+                </div>
             </div>
             
             <div class="contact">
                 <div id="contact">
-                    <i class="fa fa-user" aria-hidden="true"></i>
+                    <div class="icone">
+                        <div class="cercle">
+                            <i class="fa fa-user color-c " aria-hidden="true"></i>
+                        </div>
                         <h4>CONTACTS</h4>
+                    </div>
                 </div>
                 <div class="icone">
                     <i class="fa fa-phone" aria-hidden="true"></i>
@@ -43,8 +46,12 @@
             </div>
             <div class="elt-droite-footer">
                 <div id="etude">
-                    <i class="fa fa-users" aria-hidden="true"></i>
-                    <h4>ETUDES</h4>
+                    <div class="icone">
+                        <div class="cercle">
+                            <i class="fa fa-users color" aria-hidden="true"></i>
+                        </div>
+                        <h4>ETUDES</h4>
+                    </div>
                 </div>
                 <h5>TECHNOLAB ISTA</h5>
                 <P>Licence Génie Logiciel</P>
@@ -53,8 +60,12 @@
                 <p>Diplôme Baccaloréat malien </p>
                 <p>2020-2021</p>
                 <div id="reference">
-                    <i class="fa fa-briefcase" aria-hidden="true"></i>
-                    <h4>REFERENCES</h4>
+                    <div class="icone">
+                        <div class="cercle">
+                            <i class="fa fa-briefcase color" aria-hidden="true"></i>
+                        </div>
+                        <h4>REFERENCES</h4>
+                    </div>
                 </div>
             </div>
         </div>
@@ -172,7 +183,7 @@
             <button onclick="retourAcceuil()">Retour à l'acceuil</button>
             <button onclick="changerTheme()">Changer la couleur</button>
             <button onclick="telechargerPDF()">Télécharger le CV</button>
-          </div>
+          
           
         </div>
     </div>

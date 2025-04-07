@@ -3,6 +3,10 @@ body{
     margin-left: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     overflow-x: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
     
 }
 .acceuil{
@@ -33,55 +37,44 @@ a{
 }
 .container{
     display: flex;
-
+    flex-direction: row;
+    width: 794px;
+    height: 1123px;
 }
 
 .elt-droite{
-    background-color: rgb(167, 167, 167);
-    width: 50% ;
-   padding-top: 0%;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-bottom: 0%;
-   text-align: center;
+  background-color: rgb(167, 167, 167);
+  width: 100%;
+  padding-bottom: 0%;
+  overflow: hidden;
+  text-align: center;
 }
 .elt-gauche{
-    background-color: white;
+    background-color: whitesmoke;
     padding: 20px;
     text-align: justify;
 }
 .elt-droite .personnel{
-    background-color: rgb(73, 70, 70);
-    color: white;
-    width: 100%;
-    height:60vh;
-    border-bottom-right-radius: 150px;
-    border-bottom-left-radius: 150px;
-    margin-top: 0%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  background-color: rgb(73, 70, 70);
+  color: white;
+  width: 100%;
+  height: 350px;
+  display: flex
+;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  border-bottom-right-radius: 150px;
+  border-bottom-left-radius: 150px;
+  margin-top: 0%;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
-/*
-.elt-droite .personnel {
-   
-    margin-left: 20px;
-    padding-bottom: 50px;
-   
-    padding-bottom: 10px;
-    margin-top: 0%;
-}*/
-/*.elt-droite .portrait img{
-   clip-path: circle();
-   object-fit: cover;
-   text-align: center;
-   border-radius: 65px;
-   border: 15px solid white;
-   overflow: hidden;
-   width: 200px;;
-
+.elt-droite .portrait{
+  width: 210px;
+  height: auto;
+  position: relative;
 }
-*/
-
 .elt-gauche .experience{
     display: flex;
   align-items: center;
@@ -99,7 +92,7 @@ a{
     position: relative;
     width: 75%;
     height: 80%;
-    top:2px;
+    top:80px;
     border-radius: 50%;
     border: 9px solid white; 
 }
@@ -107,8 +100,16 @@ a{
     background-color: rgb(73, 70, 70);
     padding: 10px 10px 10px 20px;
     color: white;
+    margin-top: 70px;
+    margin-left: 10px;
+    margin-right: 10px;
     border-top-left-radius: 150px;
     border-top-right-radius:150px ;
+    margin-bottom: 0;
+    height: 100%;
+}
+.contact{
+  margin-left: 20px;
 }
 .elt-gauche .trait{
     width: 100%;
@@ -143,8 +144,9 @@ a{
 .elt-gauche .competence{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5px;
-    padding-left: 10px;
+    gap: 3px;
+    margin-top: 30px;
+    
 }
 .elt-gauche .competence .left{
     display: flex;
@@ -169,7 +171,9 @@ button {
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
-    margin: 10px;
+    margin-top: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
@@ -244,8 +248,14 @@ button {
     display: flex;
     flex-direction: row;
     gap: 50px;
+    margin-top: 40px;
   }
   .icone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .icone-c{
     display: flex;
     align-items: center;
     gap: 10px;
@@ -272,3 +282,32 @@ button {
     height: 20px;
     width: 20px;
   }
+  .color-c{
+    position: relative;
+    top:12px;
+    left: -1px;
+    color: white;
+    height: 20px;
+    width: 20px;
+  }
+  .cercle-b{
+    border-radius: 50%;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+  }
+  #etude .color , #reference .color{
+    position: relative;
+    top:12px;
+    left: -1px;
+    color: black;
+    height: 20px;
+    width: 20px;
+  }
+  #etude .cercle , #reference .cercle{
+    border-radius: 50px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+  }
+  
