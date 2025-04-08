@@ -6,7 +6,8 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
-    overflow-x: hidden;
+    height: 1123px;
+    width:100%;
     
 }
 .acceuil{
@@ -38,20 +39,21 @@ a{
 .container{
     display: flex;
     flex-direction: row;
-    width: 794px;
-    height: 1123px;
+    width: 800px;
+    height: 1110px;
 }
 
 .elt-droite{
   background-color: rgb(167, 167, 167);
   width: 100%;
-  padding-bottom: 0%;
   overflow: hidden;
+  padding-bottom: 0%;
   text-align: center;
 }
 .elt-gauche{
     background-color: whitesmoke;
-    padding: 20px;
+    padding: 2%;
+    
     text-align: justify;
 }
 .elt-droite .personnel{
@@ -71,7 +73,7 @@ a{
   padding-bottom: 20px;
 }
 .elt-droite .portrait{
-  width: 210px;
+  width:  85%;
   height: auto;
   position: relative;
 }
@@ -82,7 +84,7 @@ a{
   gap: 50px;
 }
 .elt-gauche .experience h4{
-    margin: 0;
+    margin-top: 10px;
 }
 .elt-gauche .experience p{
     margin-right: 10px;
@@ -92,7 +94,7 @@ a{
     position: relative;
     width: 75%;
     height: 80%;
-    top:80px;
+    top:26px;
     border-radius: 50%;
     border: 9px solid white; 
 }
@@ -100,7 +102,7 @@ a{
     background-color: rgb(73, 70, 70);
     padding: 10px 10px 10px 20px;
     color: white;
-    margin-top: 70px;
+    margin-top: 45px;
     margin-left: 10px;
     margin-right: 10px;
     border-top-left-radius: 150px;
@@ -108,25 +110,23 @@ a{
     margin-bottom: 0;
     height: 100%;
 }
+.contact #contact{
+  font-size: 15px;
+}
 .contact{
-  margin-left: 20px;
+  margin-left: 5%;
+  font-size: 13px;
 }
-.elt-gauche .trait{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    /*justify-content: space-between;*/
-    justify-content: center;
-     align-items: center;
-    gap: 20px;
-}
+
 .elt-gauche .tirait{
+    width: 100px; 
     display: flex;
-    flex-direction: row;
-    width: 80px;
+    justify-content: space-around;
+    position: relative;
+    top: 20%;
 }
 .elt-gauche .tirait .tirait1{
-    width: 90%;
+    width: 100%;
     background-color: black;
     margin-bottom: 18%;
     height: 2vh;
@@ -142,11 +142,12 @@ a{
     border-bottom-right-radius: 50px;
 }
 .elt-gauche .competence{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3px;
-    margin-top: 30px;
-    
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    display: flex;
+    flex-direction: row;
+    gap: 9%;
+    /* margin-top: 30px; */
 }
 .elt-gauche .competence .left{
     display: flex;
@@ -198,7 +199,7 @@ button {
   
   .alt-theme .elt-gauche {
     background-color: #2e2e2e;
-    color: white;
+    color: rgb(238, 224, 224);
   }
   
   .alt-theme .personnel,
@@ -215,18 +216,28 @@ button {
   .container, .elt-droite, .elt-gauche {
     transition: all 0.4s ease;
   }
+  
   @media screen and (max-width: 768px) {
+    body{
+      overflow-x: hidden;
+    } 
     .container {
       flex-direction: row;
+      color: red;
+      overflow-x: hidden;
     }
   
     .elt-droite, .elt-gauche {
       width: 100%;
-      padding: 10px;
+      padding-left:5px;
+      font-size: 14px;
+    }
+    .titre{
+      font-size: 15px;
     }
   
     .portrait .photo {
-      width: 60%;
+      width: 40%;
       height: auto;
     }
   
@@ -236,7 +247,7 @@ button {
     }
   
     .elt-droite, .elt-gauche {
-      padding: 40px;
+      padding: 10px;
     }
   }
 
@@ -244,16 +255,25 @@ button {
     display: flex;
     flex-direction: row;
   }
+  .elt-droite{
+    width: 40%;
+  }
+  .elt-gauche{
+    width: 60%;
+  }
   .reste{
     display: flex;
     flex-direction: row;
     gap: 50px;
     margin-top: 40px;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .icone{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+    
   }
   .icone-c{
     display: flex;
@@ -270,31 +290,30 @@ button {
   .cercle{
     border-radius: 50%;
     background-color: rgb(73, 70, 70);
-    width: 45px;
-    height: 45px;
-
+    width: 30px;
+    height: 30px;
+  }
+  .cercle-b{
+    border-radius: 50%;
+    background-color: rgb(73, 70, 70);
+    width: 30px;
+    height: 30px;
   }
   .color{
     position: relative;
-    top:12px;
-    left: 14px;
+    top:5px;
+    left: 6px;
     color: white;
-    height: 20px;
-    width: 20px;
+    height: 10px;
+    width: 10px;
   }
   .color-c{
     position: relative;
-    top:12px;
+    top:6px;
     left: -1px;
     color: white;
     height: 20px;
     width: 20px;
-  }
-  .cercle-b{
-    border-radius: 50%;
-    background-color: white;
-    width: 45px;
-    height: 45px;
   }
   #etude .color , #reference .color{
     position: relative;
@@ -310,4 +329,24 @@ button {
     width: 45px;
     height: 45px;
   }
-  
+  .elt-gauche .texte{
+    max-width: 100%;
+    padding: 5%;
+    
+  }
+  .competence .left .html{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     gap: 22%; 
+  }
+ 
+ .competence .left .first{
+  display: flex;
+flex-direction : row;
+justify-content: space-between;
+gap: 15%;
+ }
+    
+    
+    
