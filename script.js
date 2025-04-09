@@ -1,5 +1,5 @@
 function retourAcceuil() {
-  window.location.href = "index.html"; // redirige vers accueil
+  window.location.href = "index.html"; 
 }
 function voirCV() {
   window.location.href = "cv.html";
